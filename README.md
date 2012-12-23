@@ -1,6 +1,7 @@
-# Vaka
+# Backbone modules
 
-TODO: Please do not use this gem! It's not ready for prodaction
+It's not ready.
+
 This gem used new backbone 0.9.9
 
 ## Installation
@@ -31,6 +32,8 @@ Initialize you application:
 
 ###Options:
 
+-m module name
+
 -v include backbone validation plugin (http://github.com/thedersen/backbone.validation)
 
 -b include backbone model binder (https://github.com/theironcook/Backbone.ModelBinder)
@@ -60,9 +63,6 @@ after you should create rails controller:
 open rails router config and this lines:
 
 	Family::Application.routes.draw do
-	  scope 'api' do
-	    resources :entries
-	  end 
 	  root to: 'home#index'
 	  match '*path', to: 'home#index'
 	end
