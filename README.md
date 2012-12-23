@@ -8,7 +8,7 @@ This gem used new backbone 0.9.9
 
 Add this line to your application's Gemfile:
 
-    gem 'vaka'
+    gem 'backbone_modules'
 
 And then execute:
 
@@ -16,14 +16,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install vaka
+    $ gem install backbone_modules
 
 ## Usage
 
 Include gem vaka to rails Gemfile:
 	
 	
-	$ gem "vaka", :git => 'git@github.com:dovchar/vaka.git'
+	$ gem "vaka", :git => 'git@github.com:dovchar/backbone_modules.git'
 	$ bundle install
 
 Initialize you application:
