@@ -20,10 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-Include gem vaka to rails Gemfile:
-	
-	
-	$ gem "vaka", :git => 'git@github.com:dovchar/backbone_modules.git'
+Include gem backbone_modules to rails Gemfile:
+		
+	$ gem "backbone_modules", :git => 'git@github.com:dovchar/backbone_modules.git'
 	$ bundle install
 
 Initialize you application:
