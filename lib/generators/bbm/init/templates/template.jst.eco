@@ -1,0 +1,1 @@
+Hello module <%= module_namespace %>
