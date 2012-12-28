@@ -146,10 +146,16 @@ file app/assets/javascripts/posts/views/index_view.js.coffee:
 	    #$('#posts').html(this.el)
 	    this
 
+##Unit tests
+
+All unit test you can find in spec/ folder.
+	
+Please read https://github.com/bradphelan/jasminerice and https://github.com/netzpirat/guard-jasmine for more info.
+
 ##Future
 
 1. Support javascript
-2. Create unit tests structure
+2. Create unit tests structure in progress
 
 ## Contributing
 
