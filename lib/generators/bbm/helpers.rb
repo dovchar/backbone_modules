@@ -9,6 +9,10 @@ module Bbm
       def javascript_path
         File.join(asset_path, 'javascripts')
       end
+      
+      def spec_path
+        File.join('spec', 'javascripts')
+      end
 
       #TODO: refactor model_path, collection_path, router_path, view_path
       def model_path
@@ -26,7 +30,27 @@ module Bbm
       def view_path
         File.join(javascript_path, "#{@module_name}/views")
       end
+      
+      def model_test_path
+        File.join(spec_path, "#{@module_name}/models")
+      end
 
+      def collection_test_path  
+        File.join(spec_path, "#{@module_name}/collections")
+      end
+
+      def router_test_path
+        File.join(spec_path, "#{@module_name}/routers")
+      end
+
+      def view_test_path
+        File.join(spec_path, "#{@module_name}/views")
+      end
+      
+      def test_path
+        File.join(spec_path, "#{@module_name}")
+      end
+      
       def template_path
         File.join(asset_path, "templates")
       end

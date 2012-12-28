@@ -108,6 +108,16 @@ module Bbm
         template "template.jst.eco", "#{template_path}/#{@module_name}/index.jst.eco"
       end
       
+      def create_module_tests
+        empty_directory test_path
+        empty_directory model_test_path
+        empty_directory collection_test_path
+        empty_directory router_test_path
+        empty_directory view_test_path
+        template "module_spec.js.coffee", "#{test_path}/#{@module_name}_spec.js.coffee"
+        template "spec.js.coffee", "spec/spec.js.coffee"
+      end
+      
       #TODO: refactor this method
       def inject_backbone
         manifest = File.join(javascript_path, options.manifest)

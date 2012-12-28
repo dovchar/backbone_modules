@@ -12,12 +12,13 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'jquery-rails'
   gem.add_dependency 'ejs'
   gem.add_dependency 'eco'
-  gem.add_dependency 'jasmine'
+  gem.add_dependency 'jasminerice' 
+  gem.add_dependency 'guard-jasmine'
 
   gem.add_development_dependency "sqlite3"
   gem.add_development_dependency "turn"
   gem.add_development_dependency "rspec"
-  gem.add_development_dependency "jasmine"
+  gem.add_development_dependency "jasminerice"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
